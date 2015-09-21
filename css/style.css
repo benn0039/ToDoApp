@@ -6,7 +6,7 @@
 body {
     background-color: #eee;
     display: flex;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     justify-content: center;
 }
 
@@ -47,7 +47,6 @@ form {
 #inputToDo {
     flex-grow: 9;
     line-height: 2em;
-   
     padding: 0 0 0 1%;
     font-size: 1.1em;
     border: 1px solid #aaa;
@@ -63,7 +62,6 @@ form {
     letter-spacing: 1px;
     line-height: 2em;
     margin: 0 0 0 1vw;
-    
 }
  
 #addToDo:hover {
@@ -75,27 +73,30 @@ ul {
     flex-flow: column;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    line-height: 2.9em;
+}
+
 li {
     align-content: center;
     align-items: center;
     list-style: none;
-    line-height: 2em;
-    padding-left: 1vw;
     color: #444;
-    font-weight: 100;
-}
-
-li:nth-child(odd) {
-    background-color: #eee;
-    
+    letter-spacing: .3px;
+    border-bottom: 1px solid #ddd;
+    flex-grow: 29;
 }
 
 input[type="checkbox"] {
-   margin-right: 1.5vw;
-    
+    flex-grow: 1;
 }
 
 .disabled {
     opacity: .2;
-    
+}
+
+.high-priority {
+    color: crimson;
 }

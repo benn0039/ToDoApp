@@ -2,9 +2,9 @@ var ToDoApp = angular.module('ToDoApp', []);
 
 ToDoApp.controller('ToDoCtrl', function ($scope) {
   $scope.tasks = [
-      {item: "Give Justin an A", done: false},
-      {item: "Feed the cat", done: false},
-      {item: "Cut the lawn", done: false}
+      {item: "Give Justin an A", done: false, priority: true},
+      {item: "Feed the cat", done: false, priority: false},
+      {item: "Cut the lawn", done: false, priority: false}
   ];
 });
 
