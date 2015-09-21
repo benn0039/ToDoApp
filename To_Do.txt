@@ -1,0 +1,16 @@
+*********************************************
+		REQUIREMENTS
+*********************************************
+[] xxxxx
+[] xxxxx
+
+
+
+
+::::::  TO DO LIST :::::::: ->
+
+
+[] Validate html
+[] Validate css
+[] set focus on 
+[] validate input box
