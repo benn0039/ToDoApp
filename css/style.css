@@ -11,29 +11,32 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    
-    width: 90%;
-    max-width: 1024px;
-    
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 3px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     padding: 2vw;
     margin-top: 2vh;
+    max-width: 1024px;
+    width: 90%;
 }
 
 h1 {
-    width: 30%;
+    font-weight: 300;
     min-width: 175px;
     margin: 2vh auto 30px auto;
     text-align: center;
-    font-weight: 300
+    width: 30%;
+}
+
+.high-priority {
+    color: crimson;
 }
 
 .complete {
+    color: #ccc;
     text-decoration: line-through;
 }
 
@@ -45,19 +48,20 @@ form {
 }
 
 #inputToDo {
-    flex-grow: 9;
-    line-height: 2em;
-    padding: 0 0 0 1%;
-    font-size: 1.1em;
     border: 1px solid #aaa;
     border-radius: 2px;
+    flex-grow: 9;
+    font-size: 1.1em;
+    line-height: 2em;
+    padding: 0 0 0 1%;
 }
 
 #addToDo {
-    flex-grow: 1;
     background-color: #418fd3;
-    border: none;
+    border: 1px solid #418fd3;
+    border-radius: 2px;
     color: #fff;
+    flex-grow: 1;
     font-size: 1em;
     letter-spacing: 1px;
     line-height: 2em;
@@ -74,29 +78,22 @@ ul {
 }
 
 .row {
-    display: flex;
     align-items: center;
+    display: flex;
     line-height: 2.9em;
 }
 
 li {
     align-content: center;
     align-items: center;
-    list-style: none;
-    color: #444;
-    letter-spacing: .3px;
     border-bottom: 1px solid #ddd;
-    flex-grow: 29;
+    color: #444;
+    flex-grow: 60;
+    letter-spacing: .3px;
+    list-style: none;
 }
 
 input[type="checkbox"] {
-    flex-grow: 1;
-}
-
-.disabled {
-    opacity: .2;
-}
-
-.high-priority {
-    color: crimson;
+    flex-grow: 2;
+    transform: scale(1.5);
 }
